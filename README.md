@@ -1,11 +1,11 @@
 
-# MCP Projects Monorepo (9 Projects)
+# MCP Projects Monorepo (10 Projects)
 
-This monorepo contains **nine** MCP-themed projects for AI Engineers. Each project exposes a small set of **tools** via a **local JSON-RPC endpoint** (our minimal "MCP-like" server) and includes an example client / usage.
+This monorepo contains **ten** MCP-themed projects for AI Engineers. Each project exposes a small set of **tools** via a **local JSON-RPC endpoint** (our minimal "MCP-like" server) and includes an example client / usage.
 
 > Note: This is a pragmatic, local-friendly simulation—**not** the official Model Context Protocol. It lets you wire up agent hosts (Cursor, Claude Desktop, your own scripts) to tools quickly.
 
-## What you get (9 projects)
+## What you get (10 projects)
 
 1. **100% Local MCP Client**  
    A minimal client that discovers and calls tools on any local MCP-like server (runs alone or alongside the others).
@@ -34,6 +34,9 @@ This monorepo contains **nine** MCP-themed projects for AI Engineers. Each proje
 9. **MCP-powered Deep Researcher (Local Alternative)**  
    Basic DuckDuckGo HTML search + readable Markdown extraction for offline summarization.
 
+10. **MCP-powered Evals + Telemetry**  
+    Logs every tool call, measures latency, exposes Prometheus metrics, and provides a simple dashboard for monitoring.
+
 ## Layout
 
 ```
@@ -47,6 +50,7 @@ common/mcp_core/      # Lightweight JSON-RPC impl + tool registry + client
 07-complex-docs-rag/
 08-synthetic-data/
 09-deep-researcher/
+10-evals-telemetry/
 ```
 
 ## Visuals (High-Level)
@@ -122,7 +126,8 @@ MCP Host (Cursor / Claude Desktop / your app)
             ├── Vector DB (Chroma)
             ├── DuckDB / SQLite
             ├── yfinance / pandas_ta
-            └── SDV (synthetic data)
+            ├── SDV (synthetic data)
+            └── Prometheus + Telemetry
 ```
 
 Have fun!
