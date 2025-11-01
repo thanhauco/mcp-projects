@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+httpx
+pdfminer.six
+chromadb
+sentence-transformers
+numpy

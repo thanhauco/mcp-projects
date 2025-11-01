@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pydantic
+httpx
+readability-lxml
+beautifulsoup4
+markdownify
